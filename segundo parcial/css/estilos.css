@@ -1,0 +1,26 @@
+/* dentro de la carpeta CSS */
+/* ARCHIVO EXTERNO CSS */
+/* reset HTML */
+
+ body h1,h2,h3,h4,h5,h6
+        {
+            margin: 0;
+            padding: 0;
+        }
+/* genericas de tipo clase */
+.text_center
+{
+    text-align: center;
+}
+.text_right
+{
+    text-align: right;
+}
+.text_left
+{
+    text-align: left;
+}
+.text_justify
+{
+    text-align: justify;
+}
