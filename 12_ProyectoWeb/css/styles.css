@@ -8,11 +8,11 @@
 #encabezado 
 {
     height: 150px;
-    background-color: blue;
+    background-color: whitesmoke;
 }
 
-#barra_navegacion 
-{
+ 
+#barra_navegacion {
     height: 50px;
     background-color: green;
 }
@@ -20,7 +20,7 @@
 #nota_principal 
 {
     height: 300px;
-    background-color:azure;
+    background-color: burlywood;
 }
 
 #nota_secundaria 
@@ -29,6 +29,8 @@
    /* display: inline; */
    float: left; 
    padding: 20px;
+    height: 260px;
+    background-color: darkgrey;
     
 }
 
@@ -38,10 +40,33 @@
     /* display: inline; */
     float: right; 
     padding: 5px;
+    height: 290px;
+    background-color: dimgray;
 }
 
 #pie 
 {
     clear: both;
+    height: 150px;
+    background-color: darkorange;
     
 }
+
+
+#logo-sep {
+    margin-top: 31px;
+    float: left;
+    
+}
+
+#titulos {
+    padding-left: 310px;
+}
+
+#titulos h1{ font-size: 1.5em; }
+
+#titulos * {
+    margin: 0;
+    padding: 0;
+}
+
