@@ -5,11 +5,26 @@
     <title>Proyecto Web </title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<style>
+    nav li 
+    { 
+        display: inline-block;
+        background-color:whitesmoke;
+        padding: 10px;
+    }
+    
+    nav a
+    {
+        display: inline-block;
+        padding: 10px;
+    }
+    nav a: hover{ background-color: aqua;}
+    </style>
 <body>
    <div class="container block-center"> <!-- "ctrl + e" estando dentro de alguna clase es para crear o abrir reglas de archivos css sin salir del archivo --> 
        <header id="encabezado">
            <!-- imagen con logo sep -->
-           <img id="logo-sep" scr="#" alt="logo sep" width="300px" height="88px">
+           <img id="logo-sep" scr="#" alt="logo sep" width="300px" height="80px">
            <!-- textos con titulos -->
            <div id="titulos">
                <h1> Sitio Oficial del CETis108 </h1>
@@ -22,7 +37,15 @@
            
        </header>
        <nav id="barra_navegacion">
-           barra de navegacion
+           <ul> <!-- unordered list -->
+              <li> <a href="#"> Inicio </a></li>
+              <li> <a href="#"> Plantel </a></li>
+              <li> <a href="#"> Oferta Educatica </a></li>
+              <li> <a href="#"> Alumnos </a></li>
+              <li> <a href="#"> Docentes </a></li>
+              <li> <a href="#"> Empleados </a></li>
+              <li> <a href="#"> Contacto </a></li>
+           </ul>
        </nav>
        <main id="contenido">
            <section id="nota_principal"> 
