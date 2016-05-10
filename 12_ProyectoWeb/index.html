@@ -9,7 +9,6 @@
     nav li 
     { 
         display: inline-block;
-        background-color:whitesmoke;
         padding: 10px;
     }
     
@@ -24,7 +23,9 @@
    <div class="container block-center"> <!-- "ctrl + e" estando dentro de alguna clase es para crear o abrir reglas de archivos css sin salir del archivo --> 
        <header id="encabezado">
            <!-- imagen con logo sep -->
-           <img id="logo-sep" scr="#" alt="logo sep" width="300px" height="80px">
+           <figure>
+               <img id="logo-sep" src="imagenes/logo_sep.png" alt="logo_sep" >
+           </figure>
            <!-- textos con titulos -->
            <div id="titulos">
                <h1> Sitio Oficial del CETis108 </h1>
@@ -34,6 +35,13 @@
                <h4> "Gral. Gabriel Leyva Solano" C.C.T. 25DCT0108H </h4>
            </div>
            <!-- imagen sems-dgeti y cuadro de busqueda -->
+           <div id="busqueda">
+               <figure>
+                   <img src="imagenes/sems_dgeti.png" alt="Logo Sems DGETI">
+               </figure>
+               <input type="text" name="buscar">
+               <button> buscar </button>
+           </div>
            
        </header>
        <nav id="barra_navegacion">
