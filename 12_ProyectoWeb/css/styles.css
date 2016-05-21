@@ -69,12 +69,28 @@
 #nota_secundaria 
 {
    width: 660px;
-   /* display: inline; */
    float: left; 
-   padding: 20px;
-    height: 260px;
-    background-color: darkgrey;
+   min-height: 260px; 
+   background-color: darkgrey;
     
+}
+
+#nota_secundaria article {
+    display: flex;
+}
+figure{margin: 0;}
+
+#nota_secundaria figure{
+    position: relative;
+}
+
+#nota_secundaria figure span {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    padding: 5px 20px;
+    box-shadow: 1px 1px 3px darkgray;
+    background-color: lightgray;
 }
 
 #publicidad 
@@ -95,6 +111,15 @@
     
 }
 
+
+#nota_principal 
+{
+  
+    border: 10px solid #ddd;
+    box-shadow: 0 0 10px #ddd;
+    margin-top: 15px;
+
+}
 
 
 figure {
@@ -152,15 +177,3 @@ figure {
 
 
 
-
-
-#nota_principal {
-  
-     border: 10px solid #ddd;
-    box-shadow: 0 0 10px #ddd;
-
-}
-
-main {
-    margin-top: 15px;
-}
