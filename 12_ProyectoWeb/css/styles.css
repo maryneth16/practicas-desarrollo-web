@@ -6,92 +6,209 @@
 }
 
 /* bloque encabezado inicio */
-#encabezado 
-{
-    height: 120px;
-    display: flex;
-    justify-content: space-between;
+    #encabezado 
+    {
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #encabezado figure, #titulos *{
+        margin: 0;
+    }
+
+
+    #titulos h1 { font-size: 1.5em;} 
+    #titulos h2 { font-size: 1.2em;} 
+    #titulos h3 { font-size: 0.9em;} 
+    #titulos h4 { font-size: 0.8em;} 
+/* bloque encabezado cierre*/
+
+/* barra navegacion inicio*/
+    #barra_navegacion {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #barra_navegacion li{
+        display: inline-block;
+        padding: 0;
+    }
+
+    #barra_navegacion ul ul{
+        display: none;
+    }
+    #barra_navegacion a{
+        color: black;
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: darkgray;
+        transition: 0.5s;
+    }
+
+    #barra_navegacion ul
+    {
+        padding: 0;
+    }
+
+    #barra_navegacion >ul >li >a:hover {
+        background-color: lightgray;
+
+    }
+
+/* barra navegacion cierre*/
+
+/* nota principal inicio*/
+
+    #nota_principal 
+    {
+        height: 380px;
+        margin: 20px 0;
+        box-shadow: 0 0 15px darkgray;
+        margin-top: 20px;
+        margin-bottom: 35px;
+        /*border: 8px solid #fafafa;
+        box-shadow: 0 0 10px #ddd;
+        margin-top: 15px;*/
+
+    }
+
+    #nota_principal img{
+        border: 10px solid white;
+    }
+
+
+    /* nota principal cierre*/
+
+
+    /* nota secundaria inicio*/
+
+    #nota_secundaria 
+    {
+       width:700px;
+       float: left; 
+       min-height: 300px; 
+        display: inline-block;
+
+    }
+
+    h1, h2, h3, h4, h5, h6,figure, p{
+        margin: 0;
+        padding: 0;
+    }
+
+    #nota_secundaria notas{
+        margin-top: 20px;
+    }
+    #nota_secundaria article {
+        display: flex;
+        background-image: url('../imagenes/separador-nota-secundaria.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .notas{
+        box-shadow: 0 0 5px #bdbdbd;
+    }
+
+    figure{margin: 0;}
+
+    #nota_secundaria figure{
+        position: relative;
+    }
+
+    #nota_secundaria figure span {
+        position: absolute;
+        top: 10px;
+        left: -6px;
+        padding: 5px 10px;
+        box-shadow: 1px 1px 3px darkgray;
+        background-color: lightgray;
+    }
+
+    #nota_secundaria article div{
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+
+    #nota_secundaria article div p{
+        text-align: justify;
+    }
+
+    #nota_secundaria article h2{
+        font-variant: small-caps;
+        line-height: 0.9em; 
+        font-size: 1.3em;
+        font-weight: 500;
+        
+    }
+
+    #nota_secundaria a{
+        color: #b92025;
+        text-decoration: none;
+    }
+
+    #nota_secundaria a:hover{
+        color: #2a6496;
+        text-decoration: underline;
+    }
+
+  
+
+    #nota_secundaria h2{
+        margin-bottom: 15px;
+        font-variant: small-caps;
+        line-height: 0.8em;
+        font-family: "Trajan Pro Regular";
+            
+     }
+
+    #parrafo{
+        text-align: justify;
+        margin: 10px 0;
+        padding-top: 5px;
+        line-height: 1.2em;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        
+    }
+
+
+/* nota secundaria cierre*/
+
+
+/* boton "ver mas" inicio*/
+     .ver-mas{
+        width: 118px;
+        height: 35px;
+        margin-top: 1.6em;
+    }
+
+    .ver-mas>div{
+
+        background-color: #b92012;
+        display: inline-block;
+        padding: 3px !important;
+        box-shadow: 0 2px 3px darkgray;
+    }
+
+    .ver-mas>div>div{
+       padding: 2px 20px !important;
+       border: 1px solid white;
 }
-
-#encabezado figure, #titulos *{
-    margin: 0;
-}
-
-
-#titulos h1 { font-size: 1.5em;} 
-#titulos h2 { font-size: 1.2em;} 
-#titulos h3 { font-size: 0.9em;} 
-#titulos h4 { font-size: 0.8em;} 
-
-
-#barra_navegacion {
-    height: 50px;
-    display: flex;
-    justify-content: center;
     
-}
 
-#barra_navegacion li{
-    display: inline-block;
-    padding: 0;
-}
+    .ver-mas p {font-family: "Trajan Pro Regular"; color: white; font-variant: small-caps; font-size: 0.9em;}
 
-#barra_navegacion ul ul{
-    display: none;
-}
-#barra_navegacion a{
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: darkgray;
-    transition: 0.5s;
-}
+/* boton ver mas cierre*/
 
-#barra_navegacion ul
-{
-    padding: 0;
-}
-
-#barra_navegacion >ul >li >a:hover {
-    background-color: lightgray;
-    
-}
-
-
-
-#nota_principal 
-{
-    background-color: burlywood;
-}
-
-
-
-#nota_secundaria 
-{
-   width: 660px;
-   float: left; 
-   min-height: 260px; 
-   background-color: darkgrey;
-    
-}
-
-#nota_secundaria article {
-    display: flex;
-}
-figure{margin: 0;}
-
-#nota_secundaria figure{
-    position: relative;
-}
-
-#nota_secundaria figure span {
-    position: absolute;
-    top: 10px;
-    left: -10px;
-    padding: 5px 20px;
-    box-shadow: 1px 1px 3px darkgray;
-    background-color: lightgray;
-}
 
 #publicidad 
 {
@@ -111,69 +228,11 @@ figure{margin: 0;}
     
 }
 
-
-#nota_principal 
-{
-  
-    border: 10px solid #ddd;
-    box-shadow: 0 0 10px #ddd;
-    margin-top: 15px;
-
-}
-
-
 figure {
     margin: 0;
 }
 
 
-
-/*
-#logo-sep {
-    margin-top: 31px;
-    float: left;
-    
-}
-
-#titulos {
-    padding-left: 310px;
-}
-
-#titulos h1{ font-size: 1.5em; }
-
-#titulos * {
-    margin: 0;
-    padding: 0;
-}
-*/
-
-/*
-#barra_navegacion > ul {
-    display: flex;
-    justify-content: center; 
-}
-
-#barra_navegacion > li {
-    display: block;
-}
-
-#barra_navegacion ul{
-    padding: 0;
-}
-
-#barra_navegacion a
-{
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-#barra_navegacion >ul >li:hover{
-    background-color: aqua;
-}
-
-
-*/
 
 
 
