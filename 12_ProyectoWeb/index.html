@@ -22,10 +22,12 @@
 <body>
    <div class="container block-center"> <!-- "ctrl + e" estando dentro de alguna clase es para crear o abrir reglas de archivos css sin salir del archivo --> 
        <header id="encabezado">
+          
            <!-- imagen con logo sep -->
            <figure>
                <img id="logo-sep" src="imagenes/logo_sep.png" alt="logo_sep" >
            </figure>
+           
            <!-- textos con titulos -->
            <div id="titulos">
                <h1> Sitio Oficial del CETis108 </h1>
@@ -34,6 +36,7 @@
                <h4> Centro de Estudios Tecnológicos industrial y de servicios No.108 </h4>
                <h4> "Gral. Gabriel Leyva Solano" C.C.T. 25DCT0108H </h4>
            </div>
+           
            <!-- imagen sems-dgeti y cuadro de busqueda -->
            <div id="busqueda">
                <figure>
@@ -70,16 +73,16 @@
              
              <!-- primera nota -->
             <article>
-                 <figure>
-                      <img  class="notas" src="imagenes/20141113-1.jpg" alt="primera_nota">
+                 <figure class="imagen-nota-secundaria">
+                      <img  class="sombra-imagen" src="imagenes/20141113-1.jpg" alt="primera_nota">
                           <span> 16 FEB</span>
                        </figure>
-                       <div>
-                           <h2> <a href="#">Feria Vocacional 2014</a> </h2>
+                       <div class="cuerpo-nota">
+                           <h2 class="titulo-nota"> <a href="#">Feria Vocacional 2014</a> </h2>
                            <p id="parrafo" > Con la presencia de múltiples universidades de la región, 
                            se lleva a cabo con éxito la Feria Vocacional 2014 en las instalaciones del plantel...</p>
-                       <a href="#" class="ver-mas"> 
-                           <div>
+                       <a href="#"> 
+                           <div class="ver-mas">
                                <div> 
                                    <p> Ver mas </p>
                                 </div>
@@ -90,15 +93,15 @@
     
            <!-- segunda nota -->
              <article>
-              <figure>
-               <img class="notas" src="imagenes/20140827-1.jpg" alt="segunda_nota">
+              <figure class="imagen-nota-secundaria">
+               <img class="sombra-imagen" src="imagenes/20140827-1.jpg" alt="segunda_nota">
                <span> 27 AGO </span>
            </figure>
-           <div>
-               <h2> <a href="#"> Informe de actividades y rendición de cuentas del ciclo escolar 2013-2014 </a> </h2>
+           <div class="cuerpo-nota">
+               <h2 class="titulo-nota"> <a href="#"> Informe de actividades y rendición de cuentas del ciclo escolar 2013-2014 </a> </h2>
                <p id="parrafo"> Se llevó a cabo el Informe de Actividades y Rendición de Cuentas en el Centro de Estudios Tecnológicos Industrial y de Servicios No. 108...</p>
-               <a href="#" class="ver-mas"> 
-                           <div>
+               <a href="#"> 
+                           <div class="ver-mas">
                                <div> 
                                    <p> Ver mas </p>
                                 </div>
@@ -109,16 +112,16 @@
            
            <!-- tercera nota -->
            <article>
-           <figure>
-               <img class="notas" src="imagenes/20140825-1.jpg" alt="tercera_nota">
+           <figure class="imagen-nota-secundaria">
+               <img class="sombra-imagen" src="imagenes/20140825-1.jpg" alt="tercera_nota">
                <span> 25 AGO </span>
            </figure>
-           <div>
-               <h2> <a href="#"> Inauguración del nuevo ciclo escolar 2014-2015 </a> </h2>
+           <div class="cuerpo-nota">
+               <h2 class="titulo-nota"> <a href="#"> Inauguración del nuevo ciclo escolar 2014-2015 </a> </h2>
                <p id="parrafo"> Con homenaje cívico se dió inicio a las labores 
                del ciclo escolar 2014-2015 en el CETis108...</p>
-               <a href="#" class="ver-mas"> 
-                           <div>
+               <a href="#"> 
+                           <div class="ver-mas">
                                <div> 
                                    <p> Ver mas </p>
                                 </div>
@@ -129,16 +132,16 @@
            
            <!-- cuarta nota -->
            <article>
-           <figure>
-               <img class="notas" src="imagenes/20140217-1.jpg" alt="cuarta_nota">
+           <figure class="imagen-nota-secundaria">
+               <img class="sombra-imagen" src="imagenes/20140217-1.jpg" alt="cuarta_nota">
                <span> 17 FEB </span>
            </figure>
-           <div>
-               <h2> <a href="#"> Visita de autoridades municipales </a></h2>
+           <div class="cuerpo-nota">
+               <h2 class="titulo-nota"> <a href="#"> Visita de autoridades municipales </a></h2>
                <p id="parrafo" > Se realizó Lunes Cívico con la visita de nuestro presidente municipal 
                el C. Armando Leyson Castro, acompañado de regidores... </p>
-                <a href="#" class="ver-mas"> 
-                           <div>
+                <a href="#"> 
+                           <div class="ver-mas">
                                <div> 
                                    <p> Ver mas </p>
                                 </div>
@@ -148,15 +151,51 @@
            </article>
         </section>
            
-           <!-- publicidad -->
-          <aside id="publicidad">
-               publicidad 
+           <!-- anuncios -->
+          <aside id="anuncios">
+               <div class="redes-seciales">&nbsp;</div>
+               <img src="imagenes/banners/2016/05/banner-prepa-en-linea.jpg" width="215px;" class="sombra-imagen">
+               <img src="imagenes/banners/2016/05/convocatoria.png" width="215px;" class="sombra-imagen">
+               <img src="imagenes/banners/2016/05/banner_prototipos_2015.jpg" width="215px;" class="sombra-imagen">
+               <img src="imagenes/banners/2016/05/banner-jtyrc-2015.png" width="215px;" class="sombra-imagen">
            </aside>
+           
+           <!-- programas -->
+           
+           <section id="programas">
+               
+               <figure>
+                   <a href="#"> <img class="sombra-imagen" src="imagenes/programas/abandono-escolar.jpg" alt="abandono-escolar">  </a>
+               </figure>
+               
+               <figure>
+                  <a href="#"> <img class="sombra-imagen" src="imagenes/programas/becas-media-superior.jpg" alt="becas-media-superior"> </a>
+               </figure>
+               
+                <figure>
+                  <a href="#"> <img class="sombra-imagen" src="imagenes/programas/decide-tus-estudios.jpg" alt="decide-tus-estudios"> </a>
+               </figure>
+               
+                <figure>
+                  <a href="#"> <img class="sombra-imagen" src="imagenes/programas/prepa-videos.jpg" alt="prepa-videos"> </a>
+               </figure>
+               
+           </section>
        </main> 
        
        <!-- pie de pagina -->
        <footer id="pie">
-           pie de pagina
+           <section id="politicas">
+               <p class="pie-texto"> CETis No. 108 · Guasave, Sinaloa, México · Algunos derechos reservados © 2013 · Políticas de Privacidad </p>
+           </section>
+           <div class="separador-sems">
+               <a href="#"> <img src="imagenes/sems_footer.png" alt="SEMS"> </a>
+           </div>
+           <div class="text-center">
+               <p class="pie-texto"> Zona Industrial S/N, Carretera a Los Angeles del Triunfo, CP. 81101 </p>
+               <p class="pie-texto"> Guasave, Sinaloa, México - Tel. (687) 87 234 07  </p>
+               <p class="pie-texto"> Comentarios sobre este Sitio de Internet </p>
+           </div>
        </footer>
     </div>
 </body>

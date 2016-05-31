@@ -13,10 +13,6 @@
         justify-content: space-between;
     }
 
-    #encabezado figure, #titulos *{
-        margin: 0;
-    }
-
 
     #titulos h1 { font-size: 1.5em;} 
     #titulos h2 { font-size: 1.2em;} 
@@ -102,6 +98,7 @@
     #nota_secundaria notas{
         margin-top: 20px;
     }
+
     #nota_secundaria article {
         display: flex;
         background-image: url('../imagenes/separador-nota-secundaria.png');
@@ -111,19 +108,15 @@
         margin-bottom: 20px;
     }
 
-
-
-    .notas{
-        box-shadow: 0 0 5px #bdbdbd;
+    .sombra-imagen{
+        box-shadow: 0 0 10px darkgray;
     }
 
-    figure{margin: 0;}
-
-    #nota_secundaria figure{
+    .imagen-nota-secundaria{
         position: relative;
     }
 
-    #nota_secundaria figure span {
+    .imagen-nota-secundaria span {
         position: absolute;
         top: 10px;
         left: -6px;
@@ -132,15 +125,12 @@
         background-color: lightgray;
     }
 
-    #nota_secundaria article div{
+    .cuerpo-nota {
         padding-left: 20px;
         padding-right: 10px;
     }
 
 
-    #nota_secundaria article div p{
-        text-align: justify;
-    }
 
     #nota_secundaria article h2{
         font-variant: small-caps;
@@ -150,19 +140,19 @@
         
     }
 
-    #nota_secundaria a{
+    .titulo-nota a{
         color: #b92025;
         text-decoration: none;
     }
 
-    #nota_secundaria a:hover{
+   .titulo-nota a:hover{
         color: #2a6496;
         text-decoration: underline;
     }
 
   
 
-    #nota_secundaria h2{
+    .titulo-nota{
         margin-bottom: 15px;
         font-variant: small-caps;
         line-height: 0.8em;
@@ -186,23 +176,18 @@
 
 /* boton "ver mas" inicio*/
      .ver-mas{
-        width: 118px;
-        height: 35px;
         margin-top: 1.6em;
-    }
-
-    .ver-mas>div{
-
         background-color: #b92012;
         display: inline-block;
-        padding: 3px !important;
+        padding: 3px;
         box-shadow: 0 2px 3px darkgray;
     }
 
-    .ver-mas>div>div{
+
+    .ver-mas div{
        padding: 2px 20px !important;
        border: 1px solid white;
-}
+    }
     
 
     .ver-mas p {font-family: "Trajan Pro Regular"; color: white; font-variant: small-caps; font-size: 0.9em;}
@@ -210,27 +195,79 @@
 /* boton ver mas cierre*/
 
 
-#publicidad 
+/* anuncios inicio*/
+#anuncios 
 {
     width: 210px;
     /* display: inline; */
     float: right; 
     padding: 5px;
     height: 290px;
-    background-color: dimgray;
 }
 
+#anuncios > img{
+    margin: 3px 0;
+}
+
+/* anuncios cierre*/
+
+
+/*pie de pagina inicio*/
 #pie 
 {
-    clear: both;
     height: 150px;
-    background-color: darkorange;
-    
 }
 
 figure {
     margin: 0;
 }
+
+#programas{
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+}
+
+#politicas{
+    border-bottom: 3px double lightgray;
+    border-top: 3px double lightgray;
+    padding: 5px;
+    text-align: center;
+}
+
+.separador-sems{
+    padding: 5px 0;
+    margin: 20px 0;
+    position:  relative;
+    text-align: center;
+}
+
+.separador-sems a::before, .separador-sems a::after{
+    content: "";
+    border-top: 3px double lightgray;
+    width: 38%;
+    position: absolute;
+    top: 35px;
+}
+
+.separador-sems a::before{
+    left: 0;
+}
+
+.separador-sems a::after{
+    right: 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.pie-texto{
+    color: gray;
+}
+
+/* pie de pagina cierre*/
+
 
 
 
