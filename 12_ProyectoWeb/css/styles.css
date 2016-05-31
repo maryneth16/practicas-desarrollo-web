@@ -20,8 +20,10 @@
     #titulos h4 { font-size: 0.8em;} 
 /* bloque encabezado cierre*/
 
+
 /* barra navegacion inicio*/
-    #barra_navegacion {
+    #barra_navegacion 
+   {
         height: 50px;
         display: flex;
         justify-content: center;
@@ -84,7 +86,6 @@
     #nota_secundaria 
     {
        width:700px;
-       float: left; 
        min-height: 300px; 
         display: inline-block;
 
@@ -152,7 +153,7 @@
 
   
 
-    .titulo-nota{
+    .titulo-nota {
         margin-bottom: 15px;
         font-variant: small-caps;
         line-height: 0.8em;
@@ -200,7 +201,7 @@
 {
     width: 210px;
     /* display: inline; */
-    float: right; 
+   
     padding: 5px;
     height: 290px;
 }
@@ -223,7 +224,6 @@ figure {
 }
 
 #programas{
-    clear: both;
     display: flex;
     justify-content: space-between;
 }
@@ -270,6 +270,32 @@ figure {
 
 
 
+/* redes sociales*/
 
+.flexible {
+    display: flex;
+}
 
+.facebook, .twitter{
+    text-indent: -9999px;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+}
 
+.facebook{
+    background: url(../imagenes/facebook_twitter.png) 0 0;
+}
+
+.twitter{
+    background: url(../imagenes/facebook_twitter.png) -43px 0;
+}
+
+.facebook:hover{
+    background: url(../imagenes/facebook_twitter.png) 0 -43px;
+}
+
+.twitter:hover{
+    background: url(../imagenes/facebook_twitter.png) -43px -43px;
+}
+/* cierre redes sociales*/
