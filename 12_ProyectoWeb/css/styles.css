@@ -1,8 +1,10 @@
 
 .container {
     width: 920px;
+}
+
+.block-center{
     margin: 0 auto;
-    
 }
 
 /* bloque encabezado inicio */
@@ -18,51 +20,69 @@
     #titulos h2 { font-size: 1.2em;} 
     #titulos h3 { font-size: 0.9em;} 
     #titulos h4 { font-size: 0.8em;} 
+
 /* bloque encabezado cierre*/
 
 
 /* barra navegacion inicio*/
+
     #barra_navegacion 
    {
         height: 50px;
         display: flex;
         justify-content: center;
+        background-image: url(../imagenes/fondo_menu.png);
+        background-position: center;
+        align-items: center;
 
     }
 
-    #barra_navegacion li{
+    #barra_navegacion>ul>li 
+   {
         display: inline-block;
-        padding: 0;
+        position: relative;
     }
 
-    #barra_navegacion ul ul{
+    #barra_navegacion>ul ul
+   {
+        
         display: none;
-    }
-    #barra_navegacion a{
-        color: black;
-        padding: 10px 20px;
-        text-decoration: none;
-        background-color: darkgray;
-        transition: 0.5s;
+       position: absolute;
+        
     }
 
-    #barra_navegacion ul
+    #barra_navegacion>ul ul li 
     {
-        padding: 0;
-    }
-
-    #barra_navegacion >ul >li >a:hover {
-        background-color: lightgray;
+        display: block;
+        transition: 0.5s;
 
     }
+
+    #barra_navegacion a 
+   {
+        color: black;
+        padding: 5px 20px;
+        text-decoration: none;
+        display: flex;
+    }
+
+#barra_navegacion >ul>li:hover >ul{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+#barra_navegacion>ul ul li:hover{
+    background-color: lightcoral;
+}
 
 /* barra navegacion cierre*/
+
 
 /* nota principal inicio*/
 
     #nota_principal 
     {
-        height: 380px;
         margin: 20px 0;
         box-shadow: 0 0 15px darkgray;
         margin-top: 20px;
@@ -91,10 +111,11 @@
 
     }
 
-    h1, h2, h3, h4, h5, h6,figure, p{
+    h1, h2, h3, h4, h5, h6,figure, p, ul, li{
         margin: 0;
         padding: 0;
     }
+
 
     #nota_secundaria notas{
         margin-top: 20px;
@@ -105,8 +126,8 @@
         background-image: url('../imagenes/separador-nota-secundaria.png');
         background-repeat: no-repeat;
         background-position: bottom;
-        padding-bottom: 40px;
-        margin-bottom: 20px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     .sombra-imagen{
@@ -207,7 +228,7 @@
 }
 
 #anuncios > img{
-    margin: 3px 0;
+    margin: 4px 0;
 }
 
 /* anuncios cierre*/
@@ -216,7 +237,7 @@
 /*pie de pagina inicio*/
 #pie 
 {
-    height: 150px;
+    min-height: 150px;
 }
 
 figure {
